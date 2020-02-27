@@ -1,8 +1,0 @@
-div{
-    padding: 5px;
-    word-spacing: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-}

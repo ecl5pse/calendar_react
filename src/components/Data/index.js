@@ -1,7 +1,7 @@
-import React from 'react';
+import React  from 'react';
+import Fragment from  'react'
 import PropTypes from 'prop-types';
 import * as moment from 'moment';
-import styles from './Data.module.css';
 
 
 
@@ -9,9 +9,9 @@ function Data(props) {
 
 
 const showData = ()=>{
-  const  weekdays = moment.weekdays();
+  const  weekdays = moment().day()
 
-  return weekdays;
+  return  console.log(weekdays)
 
 
 
@@ -21,14 +21,7 @@ const showData = ()=>{
 
 
 
-  return (
-
-    <div>
-      {
-        showData()
-      }
-    </div>
-  )
+  return null;
 
 }
 

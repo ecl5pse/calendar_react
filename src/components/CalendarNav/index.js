@@ -8,10 +8,14 @@ class CalendarNav extends React.Component {
         <nav>
           <div className={styles.header}>
             <div>Prev</div>
-            <div>Current
-                <div className={styles.menu}>January</div>
-                <div className={styles.menu}>February</div>
-                <div className={styles.menu}>March</div>
+            <div className={styles.dropdown}>
+              Current
+
+              <div className={styles.dropdownContent}>
+                <div>January</div>
+                <div>February</div>
+                <div> March</div>
+              </div>
             </div>
             <div>Next</div>
           </div>
