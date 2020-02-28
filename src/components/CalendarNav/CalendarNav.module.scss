@@ -1,6 +1,14 @@
+$primary-font:'Montserrat', sans-serif;
+$primary-font-size: 20px;
+$primary-back-color: #0B3157;
+$primary-color:  white;
+
+
+
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family:$primary-font;
+    font-size: $primary-font-size;
     font-weight: 400;
 
 }
@@ -9,12 +17,12 @@ body {
     max-width: 340px;
     display: flex;
     flex-direction: row;
-    background-color: #0B3157;
+    background-color: $primary-back-color;
     margin: 40px auto;
     padding: 20px;
     align-self: center;
     align-items: center;
-    color: white;
+    color:$primary-color;
     justify-content: space-between;
     border-radius: 5px;
 
@@ -27,7 +35,7 @@ body {
     z-index: 1;
     opacity: 0;
     top: 95px;
-    background-color: #0B3157;
+    background-color: $primary-back-color;
     padding: -5px;
     border-radius: 5px;
     align-self: center;

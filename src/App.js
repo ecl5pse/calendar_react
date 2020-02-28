@@ -1,12 +1,17 @@
 import React       from 'react';
 import './App.css';
 import CalendarNav from './components/CalendarNav';
+import Data from './components/Data';
 
 
 function App() {
 
-  return <CalendarNav/>
-
+  return(
+  <span>
+  <CalendarNav/>
+    <Data/>
+  </span>
+  )
 
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CalendarNav.module.css';
+import styles from './CalendarNav.module.scss';
 
 class CalendarNav extends React.Component {
 
