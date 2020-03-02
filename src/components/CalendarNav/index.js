@@ -2,6 +2,12 @@ import React from 'react';
 import styles from './CalendarNav.module.scss';
 
 class CalendarNav extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+
+
+
 
   render() {
     return (
@@ -9,8 +15,7 @@ class CalendarNav extends React.Component {
           <div className={styles.header}>
             <div>Prev</div>
             <div className={styles.dropdown}>
-              Current
-
+              March
               <div className={styles.dropdownContent}>
                 <div>January</div>
                 <div>February</div>

@@ -3,22 +3,35 @@ import PropTypes from 'prop-types';
 import * as moment from 'moment';
 
 
+
 function Data(props) {
 
-  const showData = () => {
 
-    const weekdays = moment.localeData().weekdaysMin();
-    return weekdays;
+  const weekDayShort = moment.weekdaysShort();
 
-  };
 
-  return (
-      <div>{
-        showData()
-      }</div>
-  );
 
+
+
+
+  const weekDayShortName = weekDayShort.map(day => {
+
+    return (
+        <th key={day} className="week-day">
+          {day}
+        </th>
+    )
+
+  })
+  return(
+      <div>
+        {
+          weekDayShortName
+        }
+      </div>
+  )
 }
+
 
 Data.propTypes = {
   data: PropTypes.string,
